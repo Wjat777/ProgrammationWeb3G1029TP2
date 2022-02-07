@@ -1,0 +1,125 @@
+[
+    {
+        "id": "1",
+        "nom": "Copacabane Hotel",
+        "coordonnees": "Av. Atlântica, 1702 - Copacabana, Rio de Janeiro - RJ, 22021-001, Brésil",
+        "url": "https://www.belmond.com/hotels/south-america/brazil/rio-de-janeiro/belmond-copacabana-palace/about",
+        "imagePath": "../../../assets/images/hotel1.jpg",
+        "nombreEtoiles": "5",
+        "nombreChambres": "226",
+        "caracteristiques": [
+            "SPA",
+            "Piscine Interieur",
+            "Accès Plage",
+            "45 min Aeroport",
+            "Restaurent"
+        ],
+        "Commentaires": [
+            [
+                {
+                    "id": 1,
+                    "hotel_id": 1,
+                    "usager": "William",
+                    "commentaire": "Bon hôtel. Staff sympathique.",
+                    "note": 5
+                }
+            ]
+        ]
+    },
+    {
+        "id": "2",
+        "nom": "Hilton Garden Inn Times Square",
+        "coordonnees": "790 Eighth Avenue, New York, NY 10019-7568",
+        "url": "https://www.hilton.com/en/hotels/nycmwgi-hilton-garden-inn-times-square/",
+        "imagePath": "../../../assets/images/hotel2.jpg",
+        "nombreEtoiles": "5",
+        "nombreChambres": "100",
+        "caracteristiques": [
+            "Free WiFi",
+            "Fiteness Center",
+            "Pas des animaux de companies",
+            "Business Center"
+        ],
+        "Commentaires": [
+            []
+        ]
+    },
+    {
+        "id": "3",
+        "nom": "ibis Paris Tour Eiffel",
+        "coordonnees": "2 Rue Cambronne, 15e arr., 75015 Paris, France",
+        "url": "https://all.accor.com/hotel/1400/index.fr.shtml",
+        "imagePath": "../../../assets/images/hotel3.jpg",
+        "nombreEtoiles": "3",
+        "nombreChambres": "50",
+        "caracteristiques": [
+            "Wi-Fi gratuit",
+            "Restaurant",
+            "Animaux de compagnie acceptés",
+            "Buanderie"
+        ],
+        "Commentaires": [
+            [
+                {
+                    "id": 2,
+                    "hotel_id": 3,
+                    "usager": "Jean",
+                    "commentaire": "Un peu cher, ma la vue est exceptionnel",
+                    "note": 3
+                }
+            ]
+        ]
+    },
+    {
+        "id": "4",
+        "nom": "W Dubai - The Palm",
+        "coordonnees": "Crescent Rd, The Palm Jumeirah - Dubai - Émirats arabes unis",
+        "url": "https://www.marriott.com/hotels/travel/dxbtp-w-dubai-the-palm/",
+        "imagePath": "../../../assets/images/wdubai.jpg",
+        "nombreEtoiles": "5",
+        "nombreChambres": "350",
+        "caracteristiques": [
+            "Animaux de compagnie acceptés",
+            "Piscine",
+            "Face à la plage",
+            "Animaux de compagnie acceptés",
+            "Spa"
+        ],
+        "Commentaires": [
+            [
+                {
+                    "id": 3,
+                    "hotel_id": 4,
+                    "usager": "William",
+                    "commentaire": "Un hôtel vraiment fantastique... ça vaut le prix ",
+                    "note": 5
+                },
+                {
+                    "id": 4,
+                    "hotel_id": 4,
+                    "usager": "Jean",
+                    "commentaire": "Trop cher, trop chique",
+                    "note": 3
+                }
+            ]
+        ]
+    },
+    {
+        "id": "5",
+        "nom": "The Ritz-Carlton, Hong Kong",
+        "coordonnees": "International Commerce Centre (ICC), 1 Austin Rd W, Tsim Sha Tsui, Hong Kong",
+        "url": "https://www.ritzcarlton.com/en/hotels/china/hong-kong/spa",
+        "imagePath": "../../../assets/images/hotel4.jpg",
+        "nombreEtoiles": "5",
+        "nombreChambres": "600",
+        "caracteristiques": [
+            "SPA",
+            "Business Center",
+            "Restaurant Michelin Star",
+            "Shoping Center"
+        ],
+        "Commentaires": [
+            []
+        ]
+    }
+]

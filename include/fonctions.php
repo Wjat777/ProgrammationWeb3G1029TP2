@@ -5,6 +5,7 @@
 // devant être retourné par l'API. 
 function ACLForfaitFromDB($forfait, $hotel) {
     $forfaitOBJ = new stdClass();
+    $forfaitOBJ->id = $forfait["id"];
     $forfaitOBJ->destination = $forfait["destination"];
     $forfaitOBJ->villeDepart = $forfait["villeDepart"];
 	$forfaitOBJ->dateDepart = $forfait["dateDepart"];
@@ -60,12 +61,23 @@ function ForfaitFromJson($data) {
     $forfaitOBJ = new stdClass();
     $forfaitOBJ->destination = $data["destination"];
     $forfaitOBJ->villeDepart = $data["villeDepart"];
-	$forfaitOBJ->dateDepart = $data["dateDepart"];
-    $forfaitOBJ->dateRetour = $data["dateRetour"];
-    $forfaitOBJ->prix = $data["prix"];
+    if(!strtotime($data["dateDepart"]))
+        return null;
+	$forfaitOBJ->dateDepart = strtotime($data["dateDepart"]);
+    if(!strtotime($data["dateRetour"]))
+        return null;
+    $forfaitOBJ->dateRetour = strtotime($data["dateRetour"]);
+    if(!is_numeric($data["prix"]))
+        return null;
+    $forfaitOBJ->prix = (double)$data["prix"];
     $forfaitOBJ->taxes = $data["taxes"];
-    $forfaitOBJ->rabais =$data["rabais"];
-    $forfaitOBJ->vedette = $data["vedette"];
+    if(!is_numeric($data["rabais"]))
+        return null;
+    $forfaitOBJ->rabais =(double)$data["rabais"];
+    
+    if(!is_numeric($data["vedette"]))
+        return null;
+    $forfaitOBJ->vedette = (int)$data["vedette"];
     $forfaitOBJ->hotel_id = $data["hotel"]["id"];
     return $forfaitOBJ;
 }  

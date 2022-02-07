@@ -1,0 +1,396 @@
+
+[
+  {
+    "id": "1",
+    "destination": "BrésilRio de Janeiro",
+    "villeDepart": "Québec",
+    "dateDepart": "2021-12-27 00:00:00",
+    "dateRetour": "2022-01-20 00:00:00",
+    "prix": "1500.00",
+    "taxes": "Taxes et frais inclus",
+    "rabais": "200.00",
+    "vedette": "0",
+    "hotel": {
+      "id": 1,
+      "nom": "Copacabane Hotel",
+      "coordonnees": "Av. Atlântica, 1702 - Copacabana, Rio de Janeiro - RJ, 22021-001, Brésil",
+      "url": "https://www.belmond.com/hotels/south-america/brazil/rio-de-janeiro/belmond-copacabana-palace/about",
+      "imagePath": "../../../assets/images/hotel1.jpg",
+      "nombreEtoiles": 5,
+      "nombreChambres": 226,
+      "caracteristiques": [
+        "SPA",
+        "Piscine Interieur",
+        "Accès Plage",
+        "45 min Aeroport",
+        "Restaurent"
+      ]
+    }
+  },
+  {
+    "id": "2",
+    "destination": "USANew York",
+    "villeDepart": "Montreal",
+    "dateDepart": "2021-12-27 00:00:00",
+    "dateRetour": "2022-01-20 00:00:00",
+    "prix": "282.00",
+    "taxes": "Taxes et frais inclus",
+    "rabais": "0.00",
+    "vedette": "0",
+    "hotel": {
+      "id": 2,
+      "nom": "Hilton Garden Inn Times Square",
+      "coordonnees": "790 Eighth Avenue, New York, NY 10019-7568",
+      "url": "https://www.hilton.com/en/hotels/nycmwgi-hilton-garden-inn-times-square/",
+      "imagePath": "../../../assets/images/hotel2.jpg",
+      "nombreEtoiles": 5,
+      "nombreChambres": 100,
+      "caracteristiques": [
+        "Free WiFi",
+        "Fiteness Center",
+        "Pas des animaux de companies",
+        "Business Center"
+      ]
+    }
+  },
+  {
+    "id": "3",
+    "destination": "FranceParis",
+    "villeDepart": "Montréal",
+    "dateDepart": "2021-12-27 00:00:00",
+    "dateRetour": "2022-01-20 00:00:00",
+    "prix": "200.00",
+    "taxes": "Taxes et frais inclus",
+    "rabais": "50.00",
+    "vedette": "0",
+    "hotel": {
+      "id": 3,
+      "nom": "ibis Paris Tour Eiffel",
+      "coordonnees": "2 Rue Cambronne, 15e arr., 75015 Paris, France",
+      "url": "https://all.accor.com/hotel/1400/index.fr.shtml",
+      "imagePath": "../../../assets/images/hotel3.jpg",
+      "nombreEtoiles": 3,
+      "nombreChambres": 50,
+      "caracteristiques": [
+        "Wi-Fi gratuit",
+        "Restaurant",
+        "Animaux de compagnie acceptés",
+        "Buanderie"
+      ]
+    }
+  },
+  {
+    "id": "4",
+    "destination": "EmirateDubai",
+    "villeDepart": "Toronto",
+    "dateDepart": "2022-04-01 00:00:00",
+    "dateRetour": "2022-05-01 00:00:00",
+    "prix": "2500.00",
+    "taxes": "Taxes et frais inclus",
+    "rabais": "200.00",
+    "vedette": "0",
+    "hotel": {
+      "id": 4,
+      "nom": "W Dubai - The Palm",
+      "coordonnees": "Crescent Rd, The Palm Jumeirah - Dubai - Émirats arabes unis",
+      "url": "https://www.marriott.com/hotels/travel/dxbtp-w-dubai-the-palm/",
+      "imagePath": "../../../assets/images/wdubai.jpg",
+      "nombreEtoiles": 5,
+      "nombreChambres": 350,
+      "caracteristiques": [
+        "Animaux de compagnie acceptés",
+        "Piscine",
+        "Face à la plage",
+        "Animaux de compagnie acceptés",
+        "Spa"
+      ]
+    }
+  },
+  {
+    "id": "5",
+    "destination": "EmirateDubai",
+    "villeDepart": "Toronto",
+    "dateDepart": "2021-12-27 00:00:00",
+    "dateRetour": "2022-01-20 00:00:00",
+    "prix": "3500.00",
+    "taxes": "Taxes et frais inclus",
+    "rabais": "100.00",
+    "vedette": "0",
+    "hotel": {
+      "id": 4,
+      "nom": "W Dubai - The Palm",
+      "coordonnees": "Crescent Rd, The Palm Jumeirah - Dubai - Émirats arabes unis",
+      "url": "https://www.marriott.com/hotels/travel/dxbtp-w-dubai-the-palm/",
+      "imagePath": "../../../assets/images/wdubai.jpg",
+      "nombreEtoiles": 5,
+      "nombreChambres": 350,
+      "caracteristiques": [
+        "Animaux de compagnie acceptés",
+        "Piscine",
+        "Face à la plage",
+        "Animaux de compagnie acceptés",
+        "Spa"
+      ]
+    }
+  },
+  {
+    "id": "6",
+    "destination": "ChineHong Kong",
+    "villeDepart": "Toronto",
+    "dateDepart": "2022-03-01 00:00:00",
+    "dateRetour": "2022-04-01 00:00:00",
+    "prix": "1396.00",
+    "taxes": "Taxes et frais inclus",
+    "rabais": "0.00",
+    "vedette": "0",
+    "hotel": {
+      "id": 5,
+      "nom": "The Ritz-Carlton, Hong Kong",
+      "coordonnees": "International Commerce Centre (ICC), 1 Austin Rd W, Tsim Sha Tsui, Hong Kong",
+      "url": "https://www.ritzcarlton.com/en/hotels/china/hong-kong/spa",
+      "imagePath": "../../../assets/images/hotel4.jpg",
+      "nombreEtoiles": 5,
+      "nombreChambres": 600,
+      "caracteristiques": [
+        "SPA",
+        "Business Center",
+        "Restaurant Michelin Star",
+        "Shoping Center"
+      ]
+    }
+  },
+  {
+    "id": "7",
+    "destination": "ChineHong Kong",
+    "villeDepart": "Toronto",
+    "dateDepart": "2022-12-27 00:00:00",
+    "dateRetour": "2022-01-20 00:00:00",
+    "prix": "396.00",
+    "taxes": "Taxes et frais inclus",
+    "rabais": "0.00",
+    "vedette": "0",
+    "hotel": {
+      "id": 5,
+      "nom": "The Ritz-Carlton, Hong Kong",
+      "coordonnees": "International Commerce Centre (ICC), 1 Austin Rd W, Tsim Sha Tsui, Hong Kong",
+      "url": "https://www.ritzcarlton.com/en/hotels/china/hong-kong/spa",
+      "imagePath": "../../../assets/images/hotel4.jpg",
+      "nombreEtoiles": 5,
+      "nombreChambres": 600,
+      "caracteristiques": [
+        "SPA",
+        "Business Center",
+        "Restaurant Michelin Star",
+        "Shoping Center"
+      ]
+    }
+  },
+  {
+    "id": "8",
+    "destination": "ChineHong Kong",
+    "villeDepart": "Toronto",
+    "dateDepart": "2023-03-01 00:00:00",
+    "dateRetour": "2023-04-01 00:00:00",
+    "prix": "2396.00",
+    "taxes": "Taxes et frais inclus",
+    "rabais": "0.00",
+    "vedette": "1",
+    "hotel": {
+      "id": 5,
+      "nom": "The Ritz-Carlton, Hong Kong",
+      "coordonnees": "International Commerce Centre (ICC), 1 Austin Rd W, Tsim Sha Tsui, Hong Kong",
+      "url": "https://www.ritzcarlton.com/en/hotels/china/hong-kong/spa",
+      "imagePath": "../../../assets/images/hotel4.jpg",
+      "nombreEtoiles": 5,
+      "nombreChambres": 600,
+      "caracteristiques": [
+        "SPA",
+        "Business Center",
+        "Restaurant Michelin Star",
+        "Shoping Center"
+      ]
+    }
+  },
+  {
+    "id": "10",
+    "destination": "ChineHong Kong",
+    "villeDepart": "Montréal",
+    "dateDepart": "2023-05-02 00:00:00",
+    "dateRetour": "2023-06-05 00:00:00",
+    "prix": "1396.00",
+    "taxes": "Taxes et frais inclus",
+    "rabais": "0.00",
+    "vedette": "1",
+    "hotel": {
+      "id": 5,
+      "nom": "The Ritz-Carlton, Hong Kong",
+      "coordonnees": "International Commerce Centre (ICC), 1 Austin Rd W, Tsim Sha Tsui, Hong Kong",
+      "url": "https://www.ritzcarlton.com/en/hotels/china/hong-kong/spa",
+      "imagePath": "../../../assets/images/hotel4.jpg",
+      "nombreEtoiles": 5,
+      "nombreChambres": 600,
+      "caracteristiques": [
+        "SPA",
+        "Business Center",
+        "Restaurant Michelin Star",
+        "Shoping Center"
+      ]
+    }
+  },
+  {
+    "id": "11",
+    "destination": "ChineHong Kong",
+    "villeDepart": "Montréal",
+    "dateDepart": "2024-05-02 00:00:00",
+    "dateRetour": "2024-06-05 00:00:00",
+    "prix": "1396.00",
+    "taxes": "Taxes et frais inclus",
+    "rabais": "0.00",
+    "vedette": "1",
+    "hotel": {
+      "id": 5,
+      "nom": "The Ritz-Carlton, Hong Kong",
+      "coordonnees": "International Commerce Centre (ICC), 1 Austin Rd W, Tsim Sha Tsui, Hong Kong",
+      "url": "https://www.ritzcarlton.com/en/hotels/china/hong-kong/spa",
+      "imagePath": "../../../assets/images/hotel4.jpg",
+      "nombreEtoiles": 5,
+      "nombreChambres": 600,
+      "caracteristiques": [
+        "SPA",
+        "Business Center",
+        "Restaurant Michelin Star",
+        "Shoping Center"
+      ]
+    }
+  },
+  {
+    "id": "12",
+    "destination": "ChineHong Kong",
+    "villeDepart": "Montréal",
+    "dateDepart": "2024-05-02 00:00:00",
+    "dateRetour": "2024-06-05 00:00:00",
+    "prix": "1396.00",
+    "taxes": "Taxes et frais inclus",
+    "rabais": "0.00",
+    "vedette": "1",
+    "hotel": {
+      "id": 5,
+      "nom": "The Ritz-Carlton, Hong Kong",
+      "coordonnees": "International Commerce Centre (ICC), 1 Austin Rd W, Tsim Sha Tsui, Hong Kong",
+      "url": "https://www.ritzcarlton.com/en/hotels/china/hong-kong/spa",
+      "imagePath": "../../../assets/images/hotel4.jpg",
+      "nombreEtoiles": 5,
+      "nombreChambres": 600,
+      "caracteristiques": [
+        "SPA",
+        "Business Center",
+        "Restaurant Michelin Star",
+        "Shoping Center"
+      ]
+    }
+  },
+  {
+    "id": "13",
+    "destination": "ChineHong Kong",
+    "villeDepart": "Montréal",
+    "dateDepart": "2024-05-02 00:00:00",
+    "dateRetour": "2024-06-05 00:00:00",
+    "prix": "1396.00",
+    "taxes": "Taxes et frais inclus",
+    "rabais": "0.00",
+    "vedette": "1",
+    "hotel": {
+      "id": 5,
+      "nom": "The Ritz-Carlton, Hong Kong",
+      "coordonnees": "International Commerce Centre (ICC), 1 Austin Rd W, Tsim Sha Tsui, Hong Kong",
+      "url": "https://www.ritzcarlton.com/en/hotels/china/hong-kong/spa",
+      "imagePath": "../../../assets/images/hotel4.jpg",
+      "nombreEtoiles": 5,
+      "nombreChambres": 600,
+      "caracteristiques": [
+        "SPA",
+        "Business Center",
+        "Restaurant Michelin Star",
+        "Shoping Center"
+      ]
+    }
+  },
+  {
+    "id": "14",
+    "destination": "ChineHong Kong",
+    "villeDepart": "Montréal",
+    "dateDepart": "2024-05-02 00:00:00",
+    "dateRetour": "2024-06-05 00:00:00",
+    "prix": "0.00",
+    "taxes": "Taxes et frais inclus",
+    "rabais": "0.00",
+    "vedette": "1",
+    "hotel": {
+      "id": 5,
+      "nom": "The Ritz-Carlton, Hong Kong",
+      "coordonnees": "International Commerce Centre (ICC), 1 Austin Rd W, Tsim Sha Tsui, Hong Kong",
+      "url": "https://www.ritzcarlton.com/en/hotels/china/hong-kong/spa",
+      "imagePath": "../../../assets/images/hotel4.jpg",
+      "nombreEtoiles": 5,
+      "nombreChambres": 600,
+      "caracteristiques": [
+        "SPA",
+        "Business Center",
+        "Restaurant Michelin Star",
+        "Shoping Center"
+      ]
+    }
+  },
+  {
+    "id": "15",
+    "destination": "ChineHong Kong",
+    "villeDepart": "Montréal",
+    "dateDepart": "2024-05-02 00:00:00",
+    "dateRetour": "2024-06-05 00:00:00",
+    "prix": "0.00",
+    "taxes": "Taxes et frais inclus",
+    "rabais": "0.00",
+    "vedette": "1",
+    "hotel": {
+      "id": 5,
+      "nom": "The Ritz-Carlton, Hong Kong",
+      "coordonnees": "International Commerce Centre (ICC), 1 Austin Rd W, Tsim Sha Tsui, Hong Kong",
+      "url": "https://www.ritzcarlton.com/en/hotels/china/hong-kong/spa",
+      "imagePath": "../../../assets/images/hotel4.jpg",
+      "nombreEtoiles": 5,
+      "nombreChambres": 600,
+      "caracteristiques": [
+        "SPA",
+        "Business Center",
+        "Restaurant Michelin Star",
+        "Shoping Center"
+      ]
+    }
+  },
+  {
+    "id": "16",
+    "destination": "ChineHong Kong",
+    "villeDepart": "Montréal",
+    "dateDepart": "2024-05-02 00:00:00",
+    "dateRetour": "2024-06-05 00:00:00",
+    "prix": "0.00",
+    "taxes": "Taxes et frais inclus",
+    "rabais": "0.00",
+    "vedette": "1",
+    "hotel": {
+      "id": 5,
+      "nom": "The Ritz-Carlton, Hong Kong",
+      "coordonnees": "International Commerce Centre (ICC), 1 Austin Rd W, Tsim Sha Tsui, Hong Kong",
+      "url": "https://www.ritzcarlton.com/en/hotels/china/hong-kong/spa",
+      "imagePath": "../../../assets/images/hotel4.jpg",
+      "nombreEtoiles": 5,
+      "nombreChambres": 600,
+      "caracteristiques": [
+        "SPA",
+        "Business Center",
+        "Restaurant Michelin Star",
+        "Shoping Center"
+      ]
+    }
+  }
+]

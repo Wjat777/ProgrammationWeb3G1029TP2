@@ -1,0 +1,34 @@
+[
+    {
+        "id": "1",
+        "hotel_id": "1",
+        "nom": "Copacabane Hotel",
+        "usager": "William",
+        "commentaire": "Bon hôtel. Staff sympathique.",
+        "note": "5"
+    },
+    {
+        "id": "2",
+        "hotel_id": "3",
+        "nom": "ibis Paris Tour Eiffel",
+        "usager": "Jean",
+        "commentaire": "Un peu cher, ma la vue est exceptionnel",
+        "note": "3"
+    },
+    {
+        "id": "3",
+        "hotel_id": "4",
+        "nom": "W Dubai - The Palm",
+        "usager": "William",
+        "commentaire": "Un hôtel vraiment fantastique... ça vaut le prix ",
+        "note": "5"
+    },
+    {
+        "id": "4",
+        "hotel_id": "4",
+        "nom": "W Dubai - The Palm",
+        "usager": "Jean",
+        "commentaire": "Trop cher, trop chique",
+        "note": "3"
+    }
+]

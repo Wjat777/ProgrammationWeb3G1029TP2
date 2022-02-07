@@ -66,20 +66,12 @@ case 'GET':  // GESTION DES DEMANDES DE TYPE GET
 		
 		$corpsJSON = file_get_contents('php://input');
 		$data = json_decode($corpsJSON, TRUE); 
-	
 		$forfaitObj= ForfaitFromJson($data);
-		$hotelObj= HotelFromJson($data);
-
-		
-
 		if(is_object($forfaitObj)) {
-	
-			$SQL="INSERT INTO `forfaits`(`destination`, `villeDepart`, `dateDepart`, `dateRetour`, `prix`, `taxes`, `rabais`, `vedette`, `hotel_id`)
-			 VALUES                     (?            , ?            , ?           , ?           , ?     , ?      , ?       , ?        , ?         )";
-
+			$SQL="INSERT INTO `forfaits`(`destination`, `villeDepart`, `dateDepart`, `dateRetour`, `prix`, `taxes`, `rabais`, `vedette`, `hotel_id`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
 		  	if ($requete = $mysqli->prepare($SQL)  or die($mysqli->error)) {      
-				$requete->bind_param("ssssdsdii", $forfaitObj->destination, $forfaitObj->villeDepart , $forfaitObj->dateDepart, $forfaitObj->dateRetour , $forfaitObj->prix, $forfaitObj->taxes, $forfaitObj->taxes, $forfaitObj->vedette,$forfaitObj->hotel_id);
+				$requete->bind_param("ssssdsdii", $forfaitObj->destination, $forfaitObj->villeDepart ,  date("Y/m/d",$forfaitObj->dateDepart) ,date("Y/m/d",$forfaitObj->dateRetour), $forfaitObj->prix, $forfaitObj->taxes, $forfaitObj->taxes, $forfaitObj->vedette,$forfaitObj->hotel_id);
 	
 				if($requete->execute()) { 
 					$reponse->message .= "Succès";  
@@ -101,32 +93,35 @@ case 'GET':  // GESTION DES DEMANDES DE TYPE GET
 	case 'PUT':  // GESTION DES DEMANDES DE TYPE PUT
 		$reponse = new stdClass();
 		$reponse->message = "Modification d'un forfait: ";
+		if(isset($_GET['id'])) { 
+			$corpsJSON = file_get_contents('php://input');
+			$data = json_decode($corpsJSON, TRUE); 
 		
-		$corpsJSON = file_get_contents('php://input');
-		$data = json_decode($corpsJSON, TRUE); 
-	
-		$forfaitObj= ForfaitFromJson($data);
-		$hotelObj= HotelFromJson($data);
+			$forfaitObj= ForfaitFromJson($data);
 
-
-		if(isset($forfaitObj)) {
-	
-			$SQL="Update `forfaits` set `destination`=?, `villeDepart`=?, `dateDepart`=?, `dateRetour`=?, `prix`=?, `taxes`=?, `rabais`=?, `vedette`=?, `hotel_id`=? where `id`=?";
-		  	if ($requete = $mysqli->prepare($SQL)) {      
-				$requete->bind_param("ssssdsdiii", $forfaitObj->destination, $forfaitObj->villeDepart , $forfaitObj->dateDepart, $forfaitObj->dateRetour , $forfaitObj->prix, $forfaitObj->taxes, $forfaitObj->taxes, $forfaitObj->vedette,$forfaitObj->hotel_id,$_GET['id']);
-	
-				if($requete->execute()) { 
-					$reponse->message .= "Succès";  
-				} else {
-			  		$reponse->message .=  "Erreur dans l'exécution de la requête". mysqli_error($mysqli);  ;  
+			if(isset($forfaitObj)) {
+		
+				$SQL="Update `forfaits` set `destination`=?, `villeDepart`=?, `dateDepart`=?, `dateRetour`=?, `prix`=?, `taxes`=?, `rabais`=?, `vedette`=?, `hotel_id`=? where `id`=?";
+				if ($requete = $mysqli->prepare($SQL)) {      
+					$requete->bind_param("ssssdsdiii", $forfaitObj->destination, $forfaitObj->villeDepart , date("Y/m/d",$forfaitObj->dateDepart) ,date("Y/m/d",$forfaitObj->dateRetour), $forfaitObj->prix, $forfaitObj->taxes, $forfaitObj->rabais, $forfaitObj->vedette,$forfaitObj->hotel_id,$_GET['id']);
+		
+					if($requete->execute()) { 
+						$reponse->message .= "Succès";  
+					} else {
+						$reponse->message .=  "Erreur dans l'exécution de la requête". mysqli_error($mysqli);  ;  
+					}
+		
+					$requete->close(); 
+				} else  {
+					$reponse->message .=  "Erreur dans la préparation de la requête". mysqli_error($mysqli);  ;  
+				} 
+			} else {
+				$reponse->message .=  "Erreur dans le corps de l'objet fourni";  
 				}
-	
-				$requete->close(); 
-		  	} else  {
-				$reponse->message .=  "Erreur dans la préparation de la requête". mysqli_error($mysqli);  ;  
-		  	} 
-		} else {
-			$reponse->message .=  "Erreur dans le corps de l'objet fourni";  
+		}		
+		 else {
+			$reponse->message .=  "Erreur dans les paramètres (aucun identifiant fourni)";  
+		
 		}
 		echo json_encode($reponse, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 		break;

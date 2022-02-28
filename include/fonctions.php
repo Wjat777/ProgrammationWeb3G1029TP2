@@ -10,10 +10,10 @@ function ACLForfaitFromDB($forfait, $hotel) {
     $forfaitOBJ->villeDepart = $forfait["villeDepart"];
 	$forfaitOBJ->dateDepart = $forfait["dateDepart"];
     $forfaitOBJ->dateRetour = $forfait["dateRetour"];
-    $forfaitOBJ->prix = $forfait["prix"];
+    $forfaitOBJ->prix = (double)$forfait["prix"];
     $forfaitOBJ->taxes = $forfait["taxes"];
-    $forfaitOBJ->rabais =$forfait["rabais"];
-    $forfaitOBJ->vedette = $forfait["vedette"];
+    $forfaitOBJ->rabais =(double)$forfait["rabais"];
+    $forfaitOBJ->vedette = (int)$forfait["vedette"];
     
     $forfaitOBJ->hotel= new stdClass();
 	$forfaitOBJ->hotel->id = $hotel["id"];
@@ -21,13 +21,12 @@ function ACLForfaitFromDB($forfait, $hotel) {
 	$forfaitOBJ->hotel->coordonnees = $hotel["coordonnees"];
 	$forfaitOBJ->hotel->url= $hotel["url"];
 	$forfaitOBJ->hotel->imagePath= $hotel["imagePath"];
-	$forfaitOBJ->hotel->nombreEtoiles= $hotel["nombreEtoiles"];
-	$forfaitOBJ->hotel->nombreChambres= $hotel["nombreChambres"];
+	$forfaitOBJ->hotel->nombreEtoiles= (int)$hotel["nombreEtoiles"];
+	$forfaitOBJ->hotel->nombreChambres= (int)$hotel["nombreChambres"];
 	$forfaitOBJ->hotel->caracteristiques = explode(",", $hotel["caracteristiques"]);
     
     return $forfaitOBJ;
 }   
-
 
 
 function ACLHotelFromDB($hotel) {
